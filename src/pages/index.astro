@@ -2,122 +2,151 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="NANO-EXPLORER 🛸 - 极简·极轻·极智">
+<Layout title="NANO-EXPLORER - Open Source UAV Platform">
   <div class="container">
-    <!-- Hero Section -->
-    <header class="hero">
-      <h1 class="logo">NANO-EXPLORER 🛸</h1>
-      <p class="tagline">极简 · 极轻 · 极智</p>
-      <p class="tagline-sub">仅重 880g 的开源紧凑型自主探索无人机</p>
-      
-      <div class="badges">
-        <span class="badge">📜 MIT License</span>
-        <span class="badge">🔧 Open Source Hardware</span>
-        <span class="badge">⚖️ Total Weight: 880g</span>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">NANO-EXPLORER</h1>
+      <p class="subtitle">极简 · 极轻 · 极智 | 开源紧凑型自主探索无人机</p>
+      <div class="meta">
+        <span class="badge">MIT License</span>
+        <span class="badge">Open Source Hardware</span>
+        <span class="badge">Total Weight: 880g</span>
       </div>
     </header>
 
     <!-- Hero Image -->
-    <section class="hero-section">
-      <img src="/images/整机实拍图.jpeg" alt="NANO-EXPLORER 飞行实拍" class="hero-image" />
+    <section class="section">
+      <figure class="figure">
+        <img src="/images/整机实拍图.jpeg" alt="NANO-EXPLORER Flight" />
+      </figure>
+    </section>
+
+    <!-- Abstract -->
+    <section class="section">
+      <h2 class="section-title">摘要</h2>
+      <p class="abstract">
+        NANO-EXPLORER 是一款仅重 880g 的开源紧凑型自主探索无人机，通过深度优化的模块化架构和极限减重技术，
+        将高性能的自主飞行能力集成于掌上空间。本文档详细介绍其系统架构、核心技术特点及工程设计方案。
+      </p>
     </section>
 
     <!-- Weight Distribution -->
     <section class="section">
-      <h2 class="section-title">⚖️ 极致轻量化</h2>
-      <p class="section-subtitle">全副武装，将强悍的自主探索能力塞进掌上空间</p>
-      
-      <div class="weight-total">
-        <span class="weight-number">880</span>
-        <span class="weight-unit">g</span>
-      </div>
+      <h2 class="section-title">1. 系统总重分析</h2>
+      <p class="section-intro">
+        全机总重 880g，采用四大模块化总成设计，实现高度集成的空间利用与灵活的功能扩展。
+      </p>
 
-      <div class="weight-grid">
-        <div class="weight-card">
-          <div class="weight-icon">🔋</div>
-          <div class="weight-value">430g</div>
-          <div class="weight-label">电池总成</div>
-          <p class="weight-desc">定制 6S 18650 电池组</p>
-        </div>
-        <div class="weight-card">
-          <div class="weight-icon">🧠</div>
-          <div class="weight-value">170g</div>
-          <div class="weight-label">算力总成</div>
-          <p class="weight-desc">深度定制微型 Orin NX</p>
-        </div>
-        <div class="weight-card">
-          <div class="weight-icon">👁️</div>
-          <div class="weight-value">140g</div>
-          <div class="weight-label">传感器总成</div>
-          <p class="weight-desc">可变热插拔模组</p>
-        </div>
-        <div class="weight-card">
-          <div class="weight-icon">⚙️</div>
-          <div class="weight-value">140g</div>
-          <div class="weight-label">动力底座</div>
-          <p class="weight-desc">碳板 + 飞控 + 电机</p>
-        </div>
-      </div>
-    </section>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>模块</th>
+            <th>重量</th>
+            <th>占比</th>
+            <th>说明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🔋 电池总成</td>
+            <td><strong>430g</strong></td>
+            <td>48.9%</td>
+            <td>定制 6S 18650 电池组，高能效长续航</td>
+          </tr>
+          <tr>
+            <td>🧠 算力总成</td>
+            <td><strong>170g</strong></td>
+            <td>19.3%</td>
+            <td>深度定制微型 Orin NX 计算平台</td>
+          </tr>
+          <tr>
+            <td>👁️ 传感器总成</td>
+            <td><strong>140g</strong></td>
+            <td>15.9%</td>
+            <td>可变热插拔模组，多场景适配</td>
+          </tr>
+          <tr>
+            <td>⚙️ 动力底座</td>
+            <td><strong>140g</strong></td>
+            <td>15.9%</td>
+            <td>碳纤维板 + 飞控 + 电机系统</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><strong>总计</strong></td>
+            <td><strong>880g</strong></td>
+            <td><strong>100%</strong></td>
+            <td>-</td>
+          </tr>
+        </tfoot>
+      </table>
 
-    <!-- Exploded View -->
-    <section class="section dark-section">
-      <h2 class="section-title">🔧 模块化架构</h2>
-      <p class="section-subtitle">高度集成的四大总成，精密协作</p>
-      
-      <img src="/images/爆炸图.jpeg" alt="模块爆炸图" class="feature-image large" />
+      <figure class="figure">
+        <img src="/images/爆炸图.jpeg" alt="模块爆炸图" />
+        <figcaption>图 1: 四大总成模块化架构示意图</figcaption>
+      </figure>
     </section>
 
     <!-- Lightweight Tech -->
     <section class="section">
-      <h2 class="section-title">🛠️ 极限减重技术</h2>
-      <p class="section-subtitle">机电外科手术级别的深度优化</p>
+      <h2 class="section-title">2. 极限减重技术</h2>
+      <p class="section-intro">
+        通过对核心器件进行深度的机电优化，在保证性能的前提下实现极致轻量化。
+      </p>
 
-      <div class="feature-split">
-        <div class="feature-image-container">
-          <img src="/images/mid360改后.jpeg" alt="Mid360 改造后仅 188g" class="feature-image" />
-        </div>
-        <div class="feature-text">
-          <h3>激光雷达极限减重</h3>
-          <p>标准版 Mid360 经过深度改造，去除冗余外壳与接口，实现极致轻量化。</p>
-          <div class="feature-highlight">
+      <h3 class="subsection-title">2.1 激光雷达减重</h3>
+      <div class="content-grid">
+        <div class="text-block">
+          <p>
+            标准版 Livox Mid360 经过深度改造，去除冗余外壳与接口，实现显著减重。
+            优化后的模块大幅降低云台负载，提升整机动态响应性能。
+          </p>
+          <div class="highlight-box">
             <span class="highlight-value">188g</span>
             <span class="highlight-label">改造后重量</span>
           </div>
-          <ul class="feature-list">
-            <li>✓ 去除冗余外壳</li>
-            <li>✓ 优化接口设计</li>
-            <li>✓ 降低云台负载</li>
-            <li>✓ 提升动态响应</li>
-          </ul>
         </div>
+        <figure class="figure-inline">
+          <img src="/images/mid360改后.jpeg" alt="Mid360 改造" />
+          <figcaption>图 2: Mid360 改造后模块</figcaption>
+        </figure>
       </div>
 
-      <div class="feature-split reverse">
-        <div class="feature-image-container">
-          <img src="/images/orin算力总成.jpeg" alt="Orin NX 算力总成" class="feature-image" />
-        </div>
-        <div class="feature-text">
-          <h3>算力微型化 & 狂暴散热</h3>
-          <p>舍弃笨重的原厂载板，采用更小巧的定制 Orin NX 主板，搭载轻量化高风压散热风扇。</p>
+      <h3 class="subsection-title">2.2 算力微型化</h3>
+      <div class="content-grid reverse">
+        <div class="text-block">
+          <p>
+            舍弃笨重的原厂载板，采用更小巧的定制 Orin NX 主板。
+            搭载轻量化高风压散热风扇，确保持续高性能输出。
+          </p>
           <ul class="feature-list">
-            <li>✓ 微型定制主板</li>
-            <li>✓ 高效主动散热</li>
-            <li>✓ 双天线强通信</li>
-            <li>✓ 持续高性能输出</li>
+            <li>微型定制主板设计</li>
+            <li>高效主动散热系统</li>
+            <li>双天线强通信能力</li>
+            <li>持续算力稳定输出</li>
           </ul>
         </div>
+        <figure class="figure-inline">
+          <img src="/images/orin算力总成.jpeg" alt="Orin NX 算力总成" />
+          <figcaption>图 3: Orin NX 算力总成</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- Assembly Process -->
-    <section class="section dark-section">
-      <h2 class="section-title">🔩 精密装配</h2>
-      <p class="section-subtitle">从基础模块到高性能系统</p>
+    <!-- Assembly -->
+    <section class="section">
+      <h2 class="section-title">3. 精密装配工艺</h2>
+      <p class="section-intro">
+        从基础模块到高性能系统，展示三层递进式装配方案。
+      </p>
 
-      <div class="assembly-steps">
-        <div class="assembly-step">
-          <img src="/images/雷达装配.jpeg" alt="基础装配" class="step-image" />
+      <div class="steps-grid">
+        <div class="step-card">
+          <figure class="step-figure">
+            <img src="/images/雷达装配.jpeg" alt="基础装配" />
+          </figure>
           <div class="step-content">
             <span class="step-number">01</span>
             <h4>基础模块集成</h4>
@@ -125,8 +154,10 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="assembly-step">
-          <img src="/images/雷达算力装配.jpeg" alt="算力模块装配" class="step-image" />
+        <div class="step-card">
+          <figure class="step-figure">
+            <img src="/images/雷达算力装配.jpeg" alt="算力模块" />
+          </figure>
           <div class="step-content">
             <span class="step-number">02</span>
             <h4>性能模块扩展</h4>
@@ -134,8 +165,10 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="assembly-step">
-          <img src="/images/雷达算力装配细节.jpeg" alt="装配细节" class="step-image" />
+        <div class="step-card">
+          <figure class="step-figure">
+            <img src="/images/雷达算力装配细节.jpeg" alt="装配细节" />
+          </figure>
           <div class="step-content">
             <span class="step-number">03</span>
             <h4>精密连接细节</h4>
@@ -147,527 +180,523 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Sensor Modules -->
     <section class="section">
-      <h2 class="section-title">🔄 可变传感器模组</h2>
-      <p class="section-subtitle">140g 传感器总成，快速切换部署不同视觉策略</p>
+      <h2 class="section-title">4. 可变传感器模组</h2>
+      <p class="section-intro">
+        140g 传感器总成支持快速切换部署，适配不同场景的视觉策略需求。
+      </p>
 
-      <div class="sensor-modules">
-        <div class="sensor-module">
-          <img src="/images/雷达双目相机总成.jpeg" alt="双目相机总成" class="module-image" />
-          <div class="module-info">
-            <span class="module-badge">模式一</span>
-            <h3>🌐 大视场探索</h3>
-            <p>改轻版 Mid360 + 双鱼眼镜头</p>
-            <p class="module-detail">集成 USB 虚拟网口输出</p>
+      <div class="modules-grid">
+        <div class="module-card">
+          <figure class="module-figure">
+            <img src="/images/雷达双目相机总成.jpeg" alt="双目相机总成" />
+            <figcaption>图 4: 模式一 - 大视场探索</figcaption>
+          </figure>
+          <div class="module-content">
+            <h4>模式一：大视场探索</h4>
+            <p><strong>配置：</strong>改轻版 Mid360 + 双鱼眼镜头</p>
+            <p><strong>特性：</strong>集成 USB 虚拟网口输出，适用于大范围环境感知与建图</p>
           </div>
         </div>
 
-        <div class="sensor-module">
-          <img src="/images/雷达但相机总成.jpeg" alt="单目相机总成" class="module-image portrait" />
-          <div class="module-info">
-            <span class="module-badge">模式二</span>
-            <h3>🎯 高解析巡检</h3>
-            <p>改轻版 Mid360 + 广角摄像头</p>
-            <p class="module-detail">高分辨率图像采集</p>
+        <div class="module-card">
+          <figure class="module-figure">
+            <img src="/images/雷达但相机总成.jpeg" alt="单目相机总成" />
+            <figcaption>图 5: 模式二 - 高解析巡检</figcaption>
+          </figure>
+          <div class="module-content">
+            <h4>模式二：高解析巡检</h4>
+            <p><strong>配置：</strong>改轻版 Mid360 + 广角摄像头</p>
+            <p><strong>特性：</strong>高分辨率图像采集，适用于精细巡检与细节识别</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Patent Architecture -->
-    <section class="section dark-section">
-      <h2 class="section-title">📐 专利级架构</h2>
-      <p class="section-subtitle">精妙的结构设计，确保小体积下的绝对稳定</p>
+    <section class="section">
+      <h2 class="section-title">5. 专利级架构设计</h2>
+      <p class="section-intro">
+        精妙的结构设计确保小体积下的绝对稳定性与可靠性。
+      </p>
 
-      <div class="patent-showcase">
-        <img src="/images/核心电源总成.jpeg" alt="核心电源总成" class="patent-image" />
-        <img src="/images/飞控电机.jpeg" alt="飞控电机底座" class="patent-image" />
+      <div class="figures-row">
+        <figure class="figure-half">
+          <img src="/images/核心电源总成.jpeg" alt="核心电源总成" />
+          <figcaption>图 6: 核心电源总成</figcaption>
+        </figure>
+        <figure class="figure-half">
+          <img src="/images/飞控电机.jpeg" alt="飞控电机底座" />
+          <figcaption>图 7: 飞控电机底座</figcaption>
+        </figure>
       </div>
 
-      <div class="patent-features">
-        <div class="patent-item">
-          <div class="patent-icon">🏗️</div>
-          <h3>高度集成空间</h3>
-          <p>飞行驱动机构与机壳分别布置于矩形板上下两面，大幅压缩整机尺寸</p>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h4>🏗️ 高度集成空间</h4>
+          <p>飞行驱动机构与机壳分别布置于矩形板上下两面，大幅压缩整机尺寸。</p>
         </div>
-
-        <div class="patent-item">
-          <div class="patent-icon">⚡</div>
-          <h3>竖直电源中枢</h3>
-          <p>电源分配板采用上下贯穿的竖直布局，节约空间同时提供高效整齐的电力分配</p>
+        <div class="feature-item">
+          <h4>⚡ 竖直电源中枢</h4>
+          <p>电源分配板采用上下贯穿的竖直布局，节约空间并提供高效电力分配。</p>
         </div>
-
-        <div class="patent-item">
-          <div class="patent-icon">🔭</div>
-          <h3>黄金探测倾角</h3>
-          <p>雷达与相机集成安装在带有倾斜角的安装板上，显著扩大探测视角</p>
+        <div class="feature-item">
+          <h4>🔭 黄金探测倾角</h4>
+          <p>雷达与相机集成安装在带倾斜角的安装板上，显著扩大探测视角。</p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p class="footer-logo">NANO-EXPLORER 🛸</p>
-      <p>Open Source Hardware Project</p>
-      <p class="footer-links">
-        <a href="https://github.com/QGDuan/Spikive-Astro" target="_blank">GitHub</a>
-        <span class="divider">|</span>
-        <span>MIT License</span>
+    <footer class="footer">
+      <p>NANO-EXPLORER - Open Source Hardware Project</p>
+      <p>
+        <a href="https://github.com/QGDuan/Spikive-Astro" target="_blank">GitHub Repository</a>
       </p>
     </footer>
   </div>
 </Layout>
 
 <style>
-  /* Hero Section */
-  .hero {
+  /* Reset & Base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color-primary: #2563eb;
+    --color-text: #1f2937;
+    --color-text-light: #6b7280;
+    --color-border: #e5e7eb;
+    --color-bg: #ffffff;
+    --color-bg-alt: #f9fafb;
+    --font-serif: 'Georgia', 'Times New Roman', serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --max-width: 900px;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text);
+    background: var(--color-bg);
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  .header {
     text-align: center;
-    padding: 3rem 0 2rem;
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 48px;
   }
 
-  .logo {
-    font-size: 3rem;
-    font-weight: 800;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.5rem;
+  .title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    color: var(--color-text);
   }
 
-  .tagline {
-    font-size: 1.4rem;
-    color: var(--text-primary);
-    margin-bottom: 0.3rem;
-  }
-
-  .tagline-sub {
+  .subtitle {
     font-size: 1.1rem;
-    color: var(--text-secondary);
+    color: var(--color-text-light);
+    margin-bottom: 16px;
   }
 
-  .badges {
+  .meta {
     display: flex;
-    gap: 1rem;
+    gap: 12px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
   }
 
   .badge {
-    padding: 0.5rem 1rem;
-    background: var(--bg-card);
-    border-radius: 9999px;
-    font-size: 0.9rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-  }
-
-  .badge:hover {
-    border-color: var(--primary);
-    transform: translateY(-2px);
-  }
-
-  /* Hero Image */
-  .hero-section {
-    padding: 2rem 0;
-  }
-
-  .hero-image {
-    width: 100%;
-    max-height: 70vh;
-    object-fit: contain;
-    border-radius: 1rem;
-    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+    padding: 4px 12px;
+    background: var(--color-bg-alt);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    border: 1px solid var(--color-border);
   }
 
   /* Sections */
   .section {
-    padding: 4rem 0;
+    margin-bottom: 48px;
   }
 
   .section-title {
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-text);
+  }
+
+  .subsection-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: var(--color-text);
+  }
+
+  .section-intro {
+    color: var(--color-text-light);
+    margin-bottom: 24px;
+  }
+
+  .abstract {
+    font-style: italic;
+    color: var(--color-text-light);
+    background: var(--color-bg-alt);
+    padding: 20px 24px;
+    border-left: 3px solid var(--color-primary);
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* Figures */
+  .figure {
+    margin: 24px 0;
     text-align: center;
-    margin-bottom: 0.5rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
 
-  .section-subtitle {
-    text-align: center;
-    color: var(--text-secondary);
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
+  .figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
-  /* Dark Section */
-  .dark-section {
-    background: linear-gradient(180deg, transparent 0%, rgba(26, 31, 58, 0.5) 10%, rgba(26, 31, 58, 0.5) 90%, transparent 100%);
-    margin: 0 -2rem;
-    padding: 4rem 2rem;
+  .figure figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
   }
 
-  /* Weight Section */
-  .weight-total {
-    text-align: center;
-    margin-bottom: 3rem;
+  .figure-inline {
+    flex: 1;
+    min-width: 280px;
+    margin: 0;
   }
 
-  .weight-number {
-    font-size: 5rem;
-    font-weight: 800;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .weight-unit {
-    font-size: 2rem;
-    color: var(--text-secondary);
-    margin-left: 0.5rem;
-  }
-
-  .weight-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .weight-card {
-    background: var(--bg-card);
-    padding: 2rem 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-
-  .weight-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
-  }
-
-  .weight-icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .weight-value {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary);
-  }
-
-  .weight-label {
-    font-size: 1rem;
-    color: var(--text-primary);
-    margin: 0.5rem 0;
-  }
-
-  .weight-desc {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-  }
-
-  /* Feature Images */
-  .feature-image {
+  .figure-inline img {
     width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
-  .feature-image.large {
-    max-height: 80vh;
-    object-fit: contain;
+  .figure-inline figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    text-align: center;
   }
 
-  /* Feature Split */
-  .feature-split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
+  .figure-half {
+    flex: 1;
+    min-width: 200px;
+    margin: 0;
   }
 
-  .feature-split.reverse {
-    direction: rtl;
+  .figure-half img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
-  .feature-split.reverse > * {
-    direction: ltr;
+  .figure-half figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    text-align: center;
   }
 
-  .feature-text h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: var(--primary);
+  .figures-row {
+    display: flex;
+    gap: 24px;
+    margin: 24px 0;
+    flex-wrap: wrap;
   }
 
-  .feature-text p {
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
+  /* Table */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 0.95rem;
   }
 
-  .feature-highlight {
+  .data-table th,
+  .data-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .data-table thead {
+    background: var(--color-bg-alt);
+  }
+
+  .data-table th {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .data-table tfoot {
+    background: var(--color-bg-alt);
+    font-weight: 600;
+  }
+
+  .data-table tbody tr:hover {
+    background: var(--color-bg-alt);
+  }
+
+  /* Content Grid */
+  .content-grid {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    margin: 24px 0;
+  }
+
+  .content-grid.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .text-block {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .text-block p {
+    margin-bottom: 16px;
+    color: var(--color-text-light);
+  }
+
+  /* Highlight Box */
+  .highlight-box {
     display: inline-flex;
     flex-direction: column;
-    background: var(--bg-card);
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid var(--primary);
+    background: var(--color-bg-alt);
+    padding: 16px 24px;
+    border-radius: 4px;
+    border-left: 3px solid var(--color-primary);
   }
 
   .highlight-value {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--color-primary);
+    line-height: 1;
   }
 
   .highlight-label {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-top: 4px;
   }
 
+  /* Feature List */
   .feature-list {
     list-style: none;
     padding: 0;
   }
 
   .feature-list li {
-    padding: 0.5rem 0;
-    color: var(--text-secondary);
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    color: var(--color-text-light);
   }
 
-  /* Assembly Steps */
-  .assembly-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  .feature-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
   }
 
-  .assembly-step {
+  /* Steps Grid */
+  .steps-grid {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 2rem;
-    align-items: center;
-    background: rgba(26, 31, 58, 0.5);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin: 24px 0;
   }
 
-  .step-image {
-    width: 100%;
-    border-radius: 0.5rem;
-  }
-
-  .step-content {
-    padding: 1rem;
-  }
-
-  .step-number {
-    font-size: 3rem;
-    font-weight: 800;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .step-content h4 {
-    font-size: 1.3rem;
-    margin: 0.5rem 0;
-    color: var(--text-primary);
-  }
-
-  .step-content p {
-    color: var(--text-secondary);
-  }
-
-  /* Sensor Modules */
-  .sensor-modules {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-  }
-
-  .sensor-module {
-    background: var(--bg-card);
-    border-radius: 1rem;
+  .step-card {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
   }
 
-  .sensor-module:hover {
-    border-color: var(--primary);
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+  .step-figure {
+    margin: 0;
   }
 
-  .module-image {
+  .step-figure img {
     width: 100%;
-    height: 250px;
+    height: 160px;
     object-fit: cover;
   }
 
-  .module-image.portrait {
-    object-fit: contain;
-    background: #1a1a2e;
+  .step-content {
+    padding: 16px;
   }
 
-  .module-info {
-    padding: 1.5rem;
-  }
-
-  .module-badge {
+  .step-number {
     display: inline-block;
-    background: var(--gradient-primary);
-    padding: 0.3rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
   }
 
-  .module-info h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
+  .step-content h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--color-text);
   }
 
-  .module-info p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
+  .step-content p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
   }
 
-  .module-detail {
-    font-size: 0.85rem !important;
-    color: var(--primary) !important;
-    margin-top: 0.5rem;
-  }
-
-  /* Patent Showcase */
-  .patent-showcase {
+  /* Modules Grid */
+  .modules-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 32px;
+    margin: 24px 0;
   }
 
-  .patent-image {
+  .module-card {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .module-figure {
+    margin: 0;
+  }
+
+  .module-figure img {
     width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    height: 200px;
+    object-fit: cover;
   }
 
-  .patent-features {
+  .module-figure figcaption {
+    padding: 8px 16px;
+    background: var(--color-bg-alt);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+  }
+
+  .module-content {
+    padding: 16px;
+  }
+
+  .module-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--color-text);
+  }
+
+  .module-content p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 4px;
+  }
+
+  /* Features Grid */
+  .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin: 24px 0;
   }
 
-  .patent-item {
-    text-align: center;
-    padding: 2rem;
+  .feature-item {
+    padding: 20px;
+    background: var(--color-bg-alt);
+    border-radius: 4px;
   }
 
-  .patent-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  .feature-item h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--color-text);
   }
 
-  .patent-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: var(--primary);
-  }
-
-  .patent-item p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
+  .feature-item p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
   }
 
   /* Footer */
-  footer {
+  .footer {
     text-align: center;
-    padding: 4rem 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 4rem;
+    padding: 32px 0;
+    border-top: 1px solid var(--color-border);
+    margin-top: 48px;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
   }
 
-  .footer-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.5rem;
-  }
-
-  footer p {
-    color: var(--text-secondary);
-  }
-
-  .footer-links {
-    margin-top: 1rem;
-  }
-
-  .footer-links a {
-    color: var(--primary);
+  .footer a {
+    color: var(--color-primary);
     text-decoration: none;
   }
 
-  .footer-links a:hover {
+  .footer a:hover {
     text-decoration: underline;
   }
 
-  .divider {
-    margin: 0 1rem;
-    color: var(--text-secondary);
-  }
-
   /* Responsive */
-  @media (max-width: 900px) {
-    .feature-split,
-    .feature-split.reverse {
+  @media (max-width: 768px) {
+    .content-grid,
+    .content-grid.reverse {
+      flex-direction: column;
+    }
+
+    .figures-row {
+      flex-direction: column;
+    }
+
+    .modules-grid {
       grid-template-columns: 1fr;
     }
 
-    .assembly-step {
-      grid-template-columns: 1fr;
-    }
-
-    .sensor-modules {
-      grid-template-columns: 1fr;
-    }
-
-    .patent-showcase {
-      grid-template-columns: 1fr;
+    .title {
+      font-size: 2rem;
     }
   }
 
   @media (max-width: 600px) {
-    .logo {
-      font-size: 2rem;
+    .container {
+      padding: 0 16px;
     }
 
-    .section-title {
-      font-size: 1.8rem;
+    .header {
+      padding: 32px 0 24px;
     }
 
-    .weight-number {
-      font-size: 3.5rem;
+    .section {
+      margin-bottom: 32px;
     }
   }
 </style>
