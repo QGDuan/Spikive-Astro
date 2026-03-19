@@ -4,155 +4,670 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="NANO-EXPLORER 🛸 - 极简·极轻·极智">
   <div class="container">
-    <!-- Header -->
-    <header class="fade-in-up">
-      <div class="logo">NANO-EXPLORER 🛸</div>
-      <p class="tagline">极简 · 极轻 · 极智 | 仅重 880g 的开源紧凑型自主探索无人机</p>
+    <!-- Hero Section -->
+    <header class="hero">
+      <h1 class="logo">NANO-EXPLORER 🛸</h1>
+      <p class="tagline">极简 · 极轻 · 极智</p>
+      <p class="tagline-sub">仅重 880g 的开源紧凑型自主探索无人机</p>
       
       <div class="badges">
-        <span class="badge">📜 License: MIT</span>
-        <span class="badge">🔧 Hardware: Open Source</span>
-        <span class="badge">⚖️ Weight: 880g</span>
+        <span class="badge">📜 MIT License</span>
+        <span class="badge">🔧 Open Source Hardware</span>
+        <span class="badge">⚖️ Total Weight: 880g</span>
       </div>
     </header>
 
-    <!-- Hero Shot -->
-    <section>
-      <div class="image-placeholder" id="hero-shot">
-        <p>📷 请插入：整机高清渲染图/实拍侧视特写<br/><small>建议：背景深色赛博朋克风</small></p>
-      </div>
+    <!-- Hero Image -->
+    <section class="hero-section">
+      <img src="/images/整机实拍图.jpeg" alt="NANO-EXPLORER 飞行实拍" class="hero-image" />
     </section>
 
-    <!-- Weight Stats -->
-    <section>
-      <h2 class="section-title">⚖️ 极致轻量化：突破重力结界</h2>
-      <p class="section-subtitle">全副武装，将强悍的自主探索能力塞进掌上空间。我们重新定义了无人机的空间利用率。</p>
+    <!-- Weight Distribution -->
+    <section class="section">
+      <h2 class="section-title">⚖️ 极致轻量化</h2>
+      <p class="section-subtitle">全副武装，将强悍的自主探索能力塞进掌上空间</p>
       
-      <div class="image-placeholder" id="exploded-view">
-        <p>📷 请插入：无人机四大总成的"爆炸图(Exploded View)"<br/><small>用引线标注出各个模块的位置</small></p>
+      <div class="weight-total">
+        <span class="weight-number">880</span>
+        <span class="weight-unit">g</span>
       </div>
 
-      <div class="weight-stats">
-        <div class="weight-card fade-in-up">
+      <div class="weight-grid">
+        <div class="weight-card">
           <div class="weight-icon">🔋</div>
-          <div class="weight-label">电池总成</div>
           <div class="weight-value">430g</div>
-          <p class="weight-desc">定制 6S 18650 电池组，兼顾高能效与长续航</p>
+          <div class="weight-label">电池总成</div>
+          <p class="weight-desc">定制 6S 18650 电池组</p>
         </div>
-
-        <div class="weight-card fade-in-up">
+        <div class="weight-card">
           <div class="weight-icon">🧠</div>
-          <div class="weight-label">算力总成</div>
           <div class="weight-value">170g</div>
+          <div class="weight-label">算力总成</div>
           <p class="weight-desc">深度定制微型 Orin NX</p>
         </div>
-
-        <div class="weight-card fade-in-up">
+        <div class="weight-card">
           <div class="weight-icon">👁️</div>
+          <div class="weight-value">140g</div>
           <div class="weight-label">传感器总成</div>
-          <div class="weight-value">140g</div>
-          <p class="weight-desc">可变热插拔模组，应对多场景</p>
+          <p class="weight-desc">可变热插拔模组</p>
         </div>
-
-        <div class="weight-card fade-in-up">
+        <div class="weight-card">
           <div class="weight-icon">⚙️</div>
-          <div class="weight-label">动力底座总成</div>
           <div class="weight-value">140g</div>
-          <p class="weight-desc">核心碳板 + 电源模块 + 飞控 + 电机</p>
+          <div class="weight-label">动力底座</div>
+          <p class="weight-desc">碳板 + 飞控 + 电机</p>
         </div>
       </div>
     </section>
 
-    <!-- Core Philosophy -->
-    <section>
-      <h2 class="section-title">🛠️ 核心哲学：魔改与瘦身</h2>
-      <p class="section-subtitle">为了实现极致的轻量化与高可靠性，我们对核心器件进行了深度的"机电外科手术"。</p>
+    <!-- Exploded View -->
+    <section class="section dark-section">
+      <h2 class="section-title">🔧 模块化架构</h2>
+      <p class="section-subtitle">高度集成的四大总成，精密协作</p>
+      
+      <img src="/images/爆炸图.jpeg" alt="模块爆炸图" class="feature-image large" />
+    </section>
 
-      <div class="feature-grid">
-        <!-- Feature 1 -->
-        <div class="feature-card">
-          <div class="image-placeholder" id="radar-weight-compare">
-            <p>📷 请插入：标准版 Mid360 与 改轻版 Mid360 并排对比<br/><small>最好能带上电子秤的读数特写</small></p>
+    <!-- Lightweight Tech -->
+    <section class="section">
+      <h2 class="section-title">🛠️ 极限减重技术</h2>
+      <p class="section-subtitle">机电外科手术级别的深度优化</p>
+
+      <div class="feature-split">
+        <div class="feature-image-container">
+          <img src="/images/mid360改后.jpeg" alt="Mid360 改造后仅 188g" class="feature-image" />
+        </div>
+        <div class="feature-text">
+          <h3>激光雷达极限减重</h3>
+          <p>标准版 Mid360 经过深度改造，去除冗余外壳与接口，实现极致轻量化。</p>
+          <div class="feature-highlight">
+            <span class="highlight-value">188g</span>
+            <span class="highlight-label">改造后重量</span>
           </div>
-          <h3 class="feature-title">1. 激光雷达极限减重</h3>
-          <p class="feature-desc">去除冗余外壳与接口，将标准版 Mid360 极致改轻，大幅降低云台负载，提升整体动态响应。</p>
+          <ul class="feature-list">
+            <li>✓ 去除冗余外壳</li>
+            <li>✓ 优化接口设计</li>
+            <li>✓ 降低云台负载</li>
+            <li>✓ 提升动态响应</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-split reverse">
+        <div class="feature-image-container">
+          <img src="/images/orin算力总成.jpeg" alt="Orin NX 算力总成" class="feature-image" />
+        </div>
+        <div class="feature-text">
+          <h3>算力微型化 & 狂暴散热</h3>
+          <p>舍弃笨重的原厂载板，采用更小巧的定制 Orin NX 主板，搭载轻量化高风压散热风扇。</p>
+          <ul class="feature-list">
+            <li>✓ 微型定制主板</li>
+            <li>✓ 高效主动散热</li>
+            <li>✓ 双天线强通信</li>
+            <li>✓ 持续高性能输出</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assembly Process -->
+    <section class="section dark-section">
+      <h2 class="section-title">🔩 精密装配</h2>
+      <p class="section-subtitle">从基础模块到高性能系统</p>
+
+      <div class="assembly-steps">
+        <div class="assembly-step">
+          <img src="/images/雷达装配.jpeg" alt="基础装配" class="step-image" />
+          <div class="step-content">
+            <span class="step-number">01</span>
+            <h4>基础模块集成</h4>
+            <p>轻量化镂空机架 + 四旋翼电机 + 球形摄像头</p>
+          </div>
         </div>
 
-        <!-- Feature 2 -->
-        <div class="feature-card">
-          <div class="image-placeholder" id="orin-nx-custom">
-            <p>📷 请插入：常规 Orin NX 载板与定制小主板面积对比<br/><small>以及风扇特写</small></p>
+        <div class="assembly-step">
+          <img src="/images/雷达算力装配.jpeg" alt="算力模块装配" class="step-image" />
+          <div class="step-content">
+            <span class="step-number">02</span>
+            <h4>性能模块扩展</h4>
+            <p>散热片 + 风扇主动散热 + 双天线无线通信</p>
           </div>
-          <h3 class="feature-title">2. 算力微型化 & 狂暴散热</h3>
-          <p class="feature-desc">舍弃笨重的原厂载板，采用更小巧的定制 Orin NX 主板。搭载轻量化但风压强悍的定制散热风扇，确保算力狂飙时不降频。</p>
         </div>
 
-        <!-- Feature 3 -->
-        <div class="feature-card">
-          <div class="image-placeholder" id="btb-fpc-wiring">
-            <p>📷 请插入：BTB接口与FPC排线机身内部走线<br/><small>局部微距特写</small></p>
+        <div class="assembly-step">
+          <img src="/images/雷达算力装配细节.jpeg" alt="装配细节" class="step-image" />
+          <div class="step-content">
+            <span class="step-number">03</span>
+            <h4>精密连接细节</h4>
+            <p>模块化线缆连接，电力与数据高效传输</p>
           </div>
-          <h3 class="feature-title">3. 告别飞线，工业级走线艺术</h3>
-          <p class="feature-desc">全面采用 <strong>BTB (板对板) 接口</strong> 与 <strong>FPC 排线/同轴线</strong> 进行系统连接。不仅减重，更让走线如同艺术品般整洁，大幅提升高频震动下的通讯稳定性。</p>
         </div>
       </div>
     </section>
 
     <!-- Sensor Modules -->
-    <section>
-      <h2 class="section-title">🔄 灵动之眼：可变传感器模组</h2>
-      <p class="section-subtitle">不同的未知环境，需要不同的视觉策略。140g 的传感器总成支持快速切换部署：</p>
+    <section class="section">
+      <h2 class="section-title">🔄 可变传感器模组</h2>
+      <p class="section-subtitle">140g 传感器总成，快速切换部署不同视觉策略</p>
 
-      <div class="image-placeholder" id="sensor-modules">
-        <p>📷 请插入：两个传感器模组的 3D 渲染图并排展示<br/><small>或者动图(GIF)展示模块拔插过程</small></p>
-      </div>
-
-      <div class="patent-grid">
-        <div class="patent-item">
-          <h3>🌐 模式一 (大视场探索)</h3>
-          <p>改轻版 Mid360 + 双鱼眼镜头 (集成 USB 虚拟网口输出)</p>
+      <div class="sensor-modules">
+        <div class="sensor-module">
+          <img src="/images/雷达双目相机总成.jpeg" alt="双目相机总成" class="module-image" />
+          <div class="module-info">
+            <span class="module-badge">模式一</span>
+            <h3>🌐 大视场探索</h3>
+            <p>改轻版 Mid360 + 双鱼眼镜头</p>
+            <p class="module-detail">集成 USB 虚拟网口输出</p>
+          </div>
         </div>
 
-        <div class="patent-item">
-          <h3>🎯 模式二 (高解析巡检)</h3>
-          <p>改轻版 Mid360 + 广角摄像头</p>
+        <div class="sensor-module">
+          <img src="/images/雷达但相机总成.jpeg" alt="单目相机总成" class="module-image portrait" />
+          <div class="module-info">
+            <span class="module-badge">模式二</span>
+            <h3>🎯 高解析巡检</h3>
+            <p>改轻版 Mid360 + 广角摄像头</p>
+            <p class="module-detail">高分辨率图像采集</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Patent Architecture -->
-    <section>
-      <h2 class="section-title">📐 空间利用的艺术：专利级架构</h2>
-      <p class="section-subtitle">本机融合了多项精妙的结构专利设计，确保了小体积下的绝对稳定：</p>
+    <section class="section dark-section">
+      <h2 class="section-title">📐 专利级架构</h2>
+      <p class="section-subtitle">精妙的结构设计，确保小体积下的绝对稳定</p>
 
-      <div class="image-placeholder" id="patent-layout-cad">
-        <p>📷 请插入：机身内部结构的 CAD 半透明透视图<br/><small>重点用高亮颜色标出倾斜板和上下贯穿的电源分配板</small></p>
+      <div class="patent-showcase">
+        <img src="/images/核心电源总成.jpeg" alt="核心电源总成" class="patent-image" />
+        <img src="/images/飞控电机.jpeg" alt="飞控电机底座" class="patent-image" />
       </div>
 
-      <div class="patent-grid">
+      <div class="patent-features">
         <div class="patent-item">
-          <h3>🏗️ 高度集成空间</h3>
-          <p>飞行驱动机构与机壳分别布置于矩形板的上下两面，大幅压缩了整机尺寸并实现了各部件的高度集成。</p>
+          <div class="patent-icon">🏗️</div>
+          <h3>高度集成空间</h3>
+          <p>飞行驱动机构与机壳分别布置于矩形板上下两面，大幅压缩整机尺寸</p>
         </div>
 
         <div class="patent-item">
-          <h3>⚡ 竖直电源中枢</h3>
-          <p>电源分配板采用上下贯穿的竖直布局，在节约占地空间的同时，为信息处理器、雷达、相机及飞控系统提供高效且整齐的电力分配。</p>
+          <div class="patent-icon">⚡</div>
+          <h3>竖直电源中枢</h3>
+          <p>电源分配板采用上下贯穿的竖直布局，节约空间同时提供高效整齐的电力分配</p>
         </div>
 
         <div class="patent-item">
-          <h3>🔭 黄金探测倾角</h3>
-          <p>雷达与相机集成安装在带有倾斜角的安装板上，显著扩大了探测视角，且全机采用独立的模块化设计，便于装配与维护。</p>
+          <div class="patent-icon">🔭</div>
+          <h3>黄金探测倾角</h3>
+          <p>雷达与相机集成安装在带有倾斜角的安装板上，显著扩大探测视角</p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>NANO-EXPLORER © 2026 | Open Source Hardware Project</p>
-      <p style="margin-top: 1rem; font-size: 0.9rem;">
-        <a href="https://github.com/QGDuan/Spikive-Astro" target="_blank" style="color: var(--primary); text-decoration: none;">GitHub 仓库</a>
+      <p class="footer-logo">NANO-EXPLORER 🛸</p>
+      <p>Open Source Hardware Project</p>
+      <p class="footer-links">
+        <a href="https://github.com/QGDuan/Spikive-Astro" target="_blank">GitHub</a>
+        <span class="divider">|</span>
+        <span>MIT License</span>
       </p>
     </footer>
   </div>
 </Layout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+
+  .tagline {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+  }
+
+  .tagline-sub {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+  }
+
+  .badges {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  .badge {
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .badge:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+  }
+
+  /* Hero Image */
+  .hero-section {
+    padding: 2rem 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+  }
+
+  /* Sections */
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+  /* Dark Section */
+  .dark-section {
+    background: linear-gradient(180deg, transparent 0%, rgba(26, 31, 58, 0.5) 10%, rgba(26, 31, 58, 0.5) 90%, transparent 100%);
+    margin: 0 -2rem;
+    padding: 4rem 2rem;
+  }
+
+  /* Weight Section */
+  .weight-total {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .weight-number {
+    font-size: 5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .weight-unit {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    margin-left: 0.5rem;
+  }
+
+  .weight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .weight-card {
+    background: var(--bg-card);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .weight-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+  }
+
+  .weight-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .weight-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .weight-label {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin: 0.5rem 0;
+  }
+
+  .weight-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  /* Feature Images */
+  .feature-image {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .feature-image.large {
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  /* Feature Split */
+  .feature-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .feature-split.reverse {
+    direction: rtl;
+  }
+
+  .feature-split.reverse > * {
+    direction: ltr;
+  }
+
+  .feature-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+
+  .feature-text p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .feature-highlight {
+    display: inline-flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--primary);
+  }
+
+  .highlight-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .highlight-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+
+  .feature-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .feature-list li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+  }
+
+  /* Assembly Steps */
+  .assembly-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .assembly-step {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(26, 31, 58, 0.5);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .step-image {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .step-content {
+    padding: 1rem;
+  }
+
+  .step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .step-content h4 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: var(--text-primary);
+  }
+
+  .step-content p {
+    color: var(--text-secondary);
+  }
+
+  /* Sensor Modules */
+  .sensor-modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+
+  .sensor-module {
+    background: var(--bg-card);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .sensor-module:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+  }
+
+  .module-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .module-image.portrait {
+    object-fit: contain;
+    background: #1a1a2e;
+  }
+
+  .module-info {
+    padding: 1.5rem;
+  }
+
+  .module-badge {
+    display: inline-block;
+    background: var(--gradient-primary);
+    padding: 0.3rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .module-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+
+  .module-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+
+  .module-detail {
+    font-size: 0.85rem !important;
+    color: var(--primary) !important;
+    margin-top: 0.5rem;
+  }
+
+  /* Patent Showcase */
+  .patent-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .patent-image {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .patent-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .patent-item {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .patent-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .patent-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+
+  .patent-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 4rem;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+
+  footer p {
+    color: var(--text-secondary);
+  }
+
+  .footer-links {
+    margin-top: 1rem;
+  }
+
+  .footer-links a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .divider {
+    margin: 0 1rem;
+    color: var(--text-secondary);
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .feature-split,
+    .feature-split.reverse {
+      grid-template-columns: 1fr;
+    }
+
+    .assembly-step {
+      grid-template-columns: 1fr;
+    }
+
+    .sensor-modules {
+      grid-template-columns: 1fr;
+    }
+
+    .patent-showcase {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .logo {
+      font-size: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+    }
+
+    .weight-number {
+      font-size: 3.5rem;
+    }
+  }
+</style>
