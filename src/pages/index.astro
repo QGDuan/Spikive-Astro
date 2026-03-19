@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="NANO-EXPLORER 🛸 - 极简·极轻·极智">
+  <div class="container">
+    <!-- Header -->
+    <header class="fade-in-up">
+      <div class="logo">NANO-EXPLORER 🛸</div>
+      <p class="tagline">极简 · 极轻 · 极智 | 仅重 880g 的开源紧凑型自主探索无人机</p>
+      
+      <div class="badges">
+        <span class="badge">📜 License: MIT</span>
+        <span class="badge">🔧 Hardware: Open Source</span>
+        <span class="badge">⚖️ Weight: 880g</span>
+      </div>
+    </header>
+
+    <!-- Hero Shot -->
+    <section>
+      <div class="image-placeholder" id="hero-shot">
+        <p>📷 请插入：整机高清渲染图/实拍侧视特写<br/><small>建议：背景深色赛博朋克风</small></p>
+      </div>
+    </section>
+
+    <!-- Weight Stats -->
+    <section>
+      <h2 class="section-title">⚖️ 极致轻量化：突破重力结界</h2>
+      <p class="section-subtitle">全副武装，将强悍的自主探索能力塞进掌上空间。我们重新定义了无人机的空间利用率。</p>
+      
+      <div class="image-placeholder" id="exploded-view">
+        <p>📷 请插入：无人机四大总成的"爆炸图(Exploded View)"<br/><small>用引线标注出各个模块的位置</small></p>
+      </div>
+
+      <div class="weight-stats">
+        <div class="weight-card fade-in-up">
+          <div class="weight-icon">🔋</div>
+          <div class="weight-label">电池总成</div>
+          <div class="weight-value">430g</div>
+          <p class="weight-desc">定制 6S 18650 电池组，兼顾高能效与长续航</p>
+        </div>
+
+        <div class="weight-card fade-in-up">
+          <div class="weight-icon">🧠</div>
+          <div class="weight-label">算力总成</div>
+          <div class="weight-value">170g</div>
+          <p class="weight-desc">深度定制微型 Orin NX</p>
+        </div>
+
+        <div class="weight-card fade-in-up">
+          <div class="weight-icon">👁️</div>
+          <div class="weight-label">传感器总成</div>
+          <div class="weight-value">140g</div>
+          <p class="weight-desc">可变热插拔模组，应对多场景</p>
+        </div>
+
+        <div class="weight-card fade-in-up">
+          <div class="weight-icon">⚙️</div>
+          <div class="weight-label">动力底座总成</div>
+          <div class="weight-value">140g</div>
+          <p class="weight-desc">核心碳板 + 电源模块 + 飞控 + 电机</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Philosophy -->
+    <section>
+      <h2 class="section-title">🛠️ 核心哲学：魔改与瘦身</h2>
+      <p class="section-subtitle">为了实现极致的轻量化与高可靠性，我们对核心器件进行了深度的"机电外科手术"。</p>
+
+      <div class="feature-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="image-placeholder" id="radar-weight-compare">
+            <p>📷 请插入：标准版 Mid360 与 改轻版 Mid360 并排对比<br/><small>最好能带上电子秤的读数特写</small></p>
+          </div>
+          <h3 class="feature-title">1. 激光雷达极限减重</h3>
+          <p class="feature-desc">去除冗余外壳与接口，将标准版 Mid360 极致改轻，大幅降低云台负载，提升整体动态响应。</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="image-placeholder" id="orin-nx-custom">
+            <p>📷 请插入：常规 Orin NX 载板与定制小主板面积对比<br/><small>以及风扇特写</small></p>
+          </div>
+          <h3 class="feature-title">2. 算力微型化 & 狂暴散热</h3>
+          <p class="feature-desc">舍弃笨重的原厂载板，采用更小巧的定制 Orin NX 主板。搭载轻量化但风压强悍的定制散热风扇，确保算力狂飙时不降频。</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="image-placeholder" id="btb-fpc-wiring">
+            <p>📷 请插入：BTB接口与FPC排线机身内部走线<br/><small>局部微距特写</small></p>
+          </div>
+          <h3 class="feature-title">3. 告别飞线，工业级走线艺术</h3>
+          <p class="feature-desc">全面采用 <strong>BTB (板对板) 接口</strong> 与 <strong>FPC 排线/同轴线</strong> 进行系统连接。不仅减重，更让走线如同艺术品般整洁，大幅提升高频震动下的通讯稳定性。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sensor Modules -->
+    <section>
+      <h2 class="section-title">🔄 灵动之眼：可变传感器模组</h2>
+      <p class="section-subtitle">不同的未知环境，需要不同的视觉策略。140g 的传感器总成支持快速切换部署：</p>
+
+      <div class="image-placeholder" id="sensor-modules">
+        <p>📷 请插入：两个传感器模组的 3D 渲染图并排展示<br/><small>或者动图(GIF)展示模块拔插过程</small></p>
+      </div>
+
+      <div class="patent-grid">
+        <div class="patent-item">
+          <h3>🌐 模式一 (大视场探索)</h3>
+          <p>改轻版 Mid360 + 双鱼眼镜头 (集成 USB 虚拟网口输出)</p>
+        </div>
+
+        <div class="patent-item">
+          <h3>🎯 模式二 (高解析巡检)</h3>
+          <p>改轻版 Mid360 + 广角摄像头</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patent Architecture -->
+    <section>
+      <h2 class="section-title">📐 空间利用的艺术：专利级架构</h2>
+      <p class="section-subtitle">本机融合了多项精妙的结构专利设计，确保了小体积下的绝对稳定：</p>
+
+      <div class="image-placeholder" id="patent-layout-cad">
+        <p>📷 请插入：机身内部结构的 CAD 半透明透视图<br/><small>重点用高亮颜色标出倾斜板和上下贯穿的电源分配板</small></p>
+      </div>
+
+      <div class="patent-grid">
+        <div class="patent-item">
+          <h3>🏗️ 高度集成空间</h3>
+          <p>飞行驱动机构与机壳分别布置于矩形板的上下两面，大幅压缩了整机尺寸并实现了各部件的高度集成。</p>
+        </div>
+
+        <div class="patent-item">
+          <h3>⚡ 竖直电源中枢</h3>
+          <p>电源分配板采用上下贯穿的竖直布局，在节约占地空间的同时，为信息处理器、雷达、相机及飞控系统提供高效且整齐的电力分配。</p>
+        </div>
+
+        <div class="patent-item">
+          <h3>🔭 黄金探测倾角</h3>
+          <p>雷达与相机集成安装在带有倾斜角的安装板上，显著扩大了探测视角，且全机采用独立的模块化设计，便于装配与维护。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>NANO-EXPLORER © 2026 | Open Source Hardware Project</p>
+      <p style="margin-top: 1rem; font-size: 0.9rem;">
+        <a href="https://github.com/QGDuan/Spikive-Astro" target="_blank" style="color: var(--primary); text-decoration: none;">GitHub 仓库</a>
+      </p>
+    </footer>
+  </div>
+</Layout>
