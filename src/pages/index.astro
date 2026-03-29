@@ -2,12 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Spikive-Astro - Open Source UAV Platform">
+<Layout title="Astro - Open Source UAV Platform">
   <div class="container">
     <!-- Header -->
     <header class="header">
-      <h1 class="title">Spikive-Astro</h1>
-      <p class="subtitle">极简 · 极轻 · 极智 | 开源紧凑型自主探索无人机</p>
+      <h1 class="title">Astro</h1>
+      <p class="subtitle">Minimal · Lightweight · Intelligent | Open-Source Compact Autonomous Exploration Drone</p>
       <div class="meta">
         <span class="badge">MIT License</span>
         <span class="badge">Open Source Hardware</span>
@@ -18,64 +18,63 @@ import Layout from '../layouts/Layout.astro';
     <!-- Hero Image -->
     <section class="section">
       <figure class="figure">
-        <img src="./images/hero-flight.jpeg" alt="Spikive-Astro Flight" />
+        <img src="./images/hero-flight.jpeg" alt="Astro Flight" />
       </figure>
     </section>
 
     <!-- Abstract -->
     <section class="section">
-      <h2 class="section-title">摘要</h2>
+      <h2 class="section-title">Abstract</h2>
       <p class="abstract">
-        Spikive-Astro 是一款仅重 880g 的开源紧凑型自主探索无人机，通过深度优化的模块化架构和极限减重技术，
-        将高性能的自主飞行能力集成于掌上空间。本文档详细介绍其系统架构、核心技术特点及工程设计方案。
+        Astro is an open-source compact autonomous exploration drone weighing only 880g. Through a deeply optimized modular architecture and extreme weight reduction techniques, it integrates high-performance autonomous flight capabilities into a palm-sized form factor. This document details its system architecture, core technical features, and engineering design.
       </p>
     </section>
 
     <!-- Weight Distribution -->
     <section class="section">
-      <h2 class="section-title">1. 系统总重分析</h2>
+      <h2 class="section-title">1. System Weight Analysis</h2>
       <p class="section-intro">
-        全机总重 880g，采用四大模块化总成设计，实现高度集成的空间利用与灵活的功能扩展。
+        Total weight of 880g, utilizing a four-module assembly design for highly integrated space utilization and flexible functional expansion.
       </p>
 
       <table class="data-table">
         <thead>
           <tr>
-            <th>模块</th>
-            <th>重量</th>
-            <th>占比</th>
-            <th>说明</th>
+            <th>Module</th>
+            <th>Weight</th>
+            <th>Share</th>
+            <th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>🔋 电池总成</td>
+            <td>🔋 Battery Assembly</td>
             <td><strong>430g</strong></td>
             <td>48.9%</td>
-            <td>定制 6S 18650 电池组，高能效长续航</td>
+            <td>Custom 6S 18650 battery pack, high-efficiency long endurance</td>
           </tr>
           <tr>
-            <td>🧠 算力总成</td>
+            <td>🧠 Compute Assembly</td>
             <td><strong>170g</strong></td>
             <td>19.3%</td>
-            <td>深度定制微型 Orin NX 计算平台</td>
+            <td>Deeply customized miniature Orin NX computing platform</td>
           </tr>
           <tr>
-            <td>👁️ 传感器总成</td>
+            <td>👁️ Sensor Assembly</td>
             <td><strong>140g</strong></td>
             <td>15.9%</td>
-            <td>可变热插拔模组，多场景适配</td>
+            <td>Hot-swappable variable module, multi-scenario adaptable</td>
           </tr>
           <tr>
-            <td>⚙️ 动力底座</td>
+            <td>⚙️ Power Base</td>
             <td><strong>140g</strong></td>
             <td>15.9%</td>
-            <td>碳纤维板 + 飞控 + 电机系统</td>
+            <td>Carbon fiber plate + flight controller + motor system</td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <td><strong>总计</strong></td>
+            <td><strong>Total</strong></td>
             <td><strong>880g</strong></td>
             <td><strong>100%</strong></td>
             <td>-</td>
@@ -84,95 +83,93 @@ import Layout from '../layouts/Layout.astro';
       </table>
 
       <figure class="figure">
-        <img src="./images/exploded-view.jpeg" alt="模块爆炸图" />
-        <figcaption>图 1: 四大总成模块化架构示意图</figcaption>
+        <img src="./images/exploded-view.jpeg" alt="Exploded View" />
+        <figcaption>Fig. 1: Four-module assembly architecture diagram</figcaption>
       </figure>
     </section>
 
     <!-- Lightweight Tech -->
     <section class="section">
-      <h2 class="section-title">2. 极限减重技术</h2>
+      <h2 class="section-title">2. Extreme Weight Reduction</h2>
       <p class="section-intro">
-        通过对核心器件进行深度的机电优化，在保证性能的前提下实现极致轻量化。
+        Through deep electromechanical optimization of core components,极致 lightweight design is achieved without compromising performance.
       </p>
 
-      <h3 class="subsection-title">2.1 激光雷达减重</h3>
+      <h3 class="subsection-title">2.1 LiDAR Weight Reduction</h3>
       <div class="content-grid">
         <div class="text-block">
           <p>
-            标准版 Livox Mid360 经过深度改造，去除冗余外壳与接口，实现显著减重。
-            优化后的模块大幅降低云台负载，提升整机动态响应性能。
+            The standard Livox Mid360 undergoes deep modification — removing redundant enclosures and interfaces for significant weight savings. The optimized module drastically reduces gimbal payload and improves overall dynamic response.
           </p>
           <div class="highlight-box">
             <span class="highlight-value">188g</span>
-            <span class="highlight-label">改造后重量</span>
+            <span class="highlight-label">Weight After Modification</span>
           </div>
         </div>
         <figure class="figure-inline">
-          <img src="./images/mid360-lightweight.jpeg" alt="Mid360 改造" />
-          <figcaption>图 2: Mid360 改造后模块</figcaption>
+          <img src="./images/mid360-lightweight.jpeg" alt="Mid360 Modification" />
+          <figcaption>Fig. 2: Modified Mid360 module</figcaption>
         </figure>
       </div>
 
-      <h3 class="subsection-title">2.2 算力微型化</h3>
+      <h3 class="subsection-title">2.2 Compute Miniaturization</h3>
       <div class="content-grid reverse">
         <div class="text-block">
           <p>
-            舍弃笨重的原厂载板，采用更小巧的定制 Orin NX 主板。
-            搭载轻量化高风压散热风扇，确保持续高性能输出。
+            Discarding the bulky stock carrier board in favor of a compact custom Orin NX motherboard. Equipped with a lightweight high-pressure cooling fan to ensure sustained high-performance output.
           </p>
           <ul class="feature-list">
-            <li>微型定制主板设计</li>
-            <li>高效主动散热系统</li>
-            <li>双天线强通信能力</li>
-            <li>持续算力稳定输出</li>
+            <li>Miniature custom motherboard design</li>
+            <li>Efficient active cooling system</li>
+            <li>Dual-antenna robust communication</li>
+            <li>Sustained stable compute output</li>
           </ul>
         </div>
         <figure class="figure-inline">
-          <img src="./images/orin-compute-module.jpeg" alt="Orin NX 算力总成" />
-          <figcaption>图 3: Orin NX 算力总成</figcaption>
+          <img src="./images/orin-compute-module.jpeg" alt="Orin NX Compute Assembly" />
+          <figcaption>Fig. 3: Orin NX compute assembly</figcaption>
         </figure>
       </div>
     </section>
 
     <!-- Assembly -->
     <section class="section">
-      <h2 class="section-title">3. 精密装配工艺</h2>
+      <h2 class="section-title">3. Precision Assembly</h2>
       <p class="section-intro">
-        从基础模块到高性能系统，展示三层递进式装配方案。
+        From basic modules to a high-performance system — showcasing a three-stage progressive assembly approach.
       </p>
 
       <div class="steps-grid">
         <div class="step-card">
           <figure class="step-figure">
-            <img src="./images/lidar-assembly.jpeg" alt="基础装配" />
+            <img src="./images/lidar-assembly.jpeg" alt="Basic Assembly" />
           </figure>
           <div class="step-content">
             <span class="step-number">01</span>
-            <h4>基础模块集成</h4>
-            <p>轻量化镂空机架 + 四旋翼电机 + 球形摄像头</p>
+            <h4>Base Module Integration</h4>
+            <p>Lightweight hollow frame + quad-rotor motors + spherical camera</p>
           </div>
         </div>
 
         <div class="step-card">
           <figure class="step-figure">
-            <img src="./images/lidar-compute-assembly.jpeg" alt="算力模块" />
+            <img src="./images/lidar-compute-assembly.jpeg" alt="Compute Module" />
           </figure>
           <div class="step-content">
             <span class="step-number">02</span>
-            <h4>性能模块扩展</h4>
-            <p>散热片 + 风扇主动散热 + 双天线无线通信</p>
+            <h4>Performance Module Expansion</h4>
+            <p>Heatsink + active fan cooling + dual-antenna wireless communication</p>
           </div>
         </div>
 
         <div class="step-card">
           <figure class="step-figure">
-            <img src="./images/lidar-compute-detail.jpeg" alt="装配细节" />
+            <img src="./images/lidar-compute-detail.jpeg" alt="Assembly Detail" />
           </figure>
           <div class="step-content">
             <span class="step-number">03</span>
-            <h4>精密连接细节</h4>
-            <p>模块化线缆连接，电力与数据高效传输</p>
+            <h4>Precision Connection Details</h4>
+            <p>Modular cable routing for efficient power and data transmission</p>
           </div>
         </div>
       </div>
@@ -180,33 +177,33 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Sensor Modules -->
     <section class="section">
-      <h2 class="section-title">4. 可变传感器模组</h2>
+      <h2 class="section-title">4. Variable Sensor Modules</h2>
       <p class="section-intro">
-        140g 传感器总成支持快速切换部署，适配不同场景的视觉策略需求。
+        The 140g sensor assembly supports rapid hot-swap deployment, adapting to different visual strategy requirements across scenarios.
       </p>
 
       <div class="modules-grid">
         <div class="module-card">
           <figure class="module-figure">
-            <img src="./images/lidar-dual-camera.jpeg" alt="双目相机总成" />
-            <figcaption>图 4: 模式一 - 大视场探索</figcaption>
+            <img src="./images/lidar-dual-camera.jpeg" alt="Dual-Camera Assembly" />
+            <figcaption>Fig. 4: Mode 1 - Wide-Field Exploration</figcaption>
           </figure>
           <div class="module-content">
-            <h4>模式一：大视场探索</h4>
-            <p><strong>配置：</strong>改轻版 Mid360 + 双鱼眼镜头</p>
-            <p><strong>特性：</strong>集成 USB 虚拟网口输出，适用于大范围环境感知与建图</p>
+            <h4>Mode 1: Wide-Field Exploration</h4>
+            <p><strong>Configuration:</strong> Lightened Mid360 + dual fisheye lenses</p>
+            <p><strong>Features:</strong> Integrated USB virtual network output, suitable for large-scale environmental perception and mapping</p>
           </div>
         </div>
 
         <div class="module-card">
           <figure class="module-figure">
-            <img src="./images/lidar-single-camera.jpeg" alt="单目相机总成" />
-            <figcaption>图 5: 模式二 - 高解析巡检</figcaption>
+            <img src="./images/lidar-single-camera.jpeg" alt="Single-Camera Assembly" />
+            <figcaption>Fig. 5: Mode 2 - High-Resolution Inspection</figcaption>
           </figure>
           <div class="module-content">
-            <h4>模式二：高解析巡检</h4>
-            <p><strong>配置：</strong>改轻版 Mid360 + 广角摄像头</p>
-            <p><strong>特性：</strong>高分辨率图像采集，适用于精细巡检与细节识别</p>
+            <h4>Mode 2: High-Resolution Inspection</h4>
+            <p><strong>Configuration:</strong> Lightened Mid360 + wide-angle camera</p>
+            <p><strong>Features:</strong> High-resolution image capture, suitable for detailed inspection and fine feature recognition</p>
           </div>
         </div>
       </div>
@@ -214,41 +211,41 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Patent Architecture -->
     <section class="section">
-      <h2 class="section-title">5. 专利级架构设计</h2>
+      <h2 class="section-title">5. Patent-Grade Architecture</h2>
       <p class="section-intro">
-        精妙的结构设计确保小体积下的绝对稳定性与可靠性。
+        Ingenious structural design ensures absolute stability and reliability within a compact volume.
       </p>
 
       <div class="figures-row">
         <figure class="figure-half">
-          <img src="./images/power-module.jpeg" alt="核心电源总成" />
-          <figcaption>图 6: 核心电源总成</figcaption>
+          <img src="./images/power-module.jpeg" alt="Core Power Assembly" />
+          <figcaption>Fig. 6: Core power assembly</figcaption>
         </figure>
         <figure class="figure-half">
-          <img src="./images/flight-controller.jpeg" alt="飞控电机底座" />
-          <figcaption>图 7: 飞控电机底座</figcaption>
+          <img src="./images/flight-controller.jpeg" alt="Flight Controller Base" />
+          <figcaption>Fig. 7: Flight controller & motor base</figcaption>
         </figure>
       </div>
 
       <div class="features-grid">
         <div class="feature-item">
-          <h4>🏗️ 高度集成空间</h4>
-          <p>飞行驱动机构与机壳分别布置于矩形板上下两面，大幅压缩整机尺寸。</p>
+          <h4>🏗️ Highly Integrated Layout</h4>
+          <p>Flight drive mechanisms and enclosure are mounted on opposite sides of a rectangular plate, drastically reducing overall dimensions.</p>
         </div>
         <div class="feature-item">
-          <h4>⚡ 竖直电源中枢</h4>
-          <p>电源分配板采用上下贯穿的竖直布局，节约空间并提供高效电力分配。</p>
+          <h4>⚡ Vertical Power Hub</h4>
+          <p>The power distribution board adopts a top-to-bottom vertical layout, saving space while providing efficient power distribution.</p>
         </div>
         <div class="feature-item">
-          <h4>🔭 黄金探测倾角</h4>
-          <p>雷达与相机集成安装在带倾斜角的安装板上，显著扩大探测视角。</p>
+          <h4>🔭 Optimal Detection Angle</h4>
+          <p>LiDAR and camera are integrated on a tilted mounting plate, significantly expanding the detection field of view.</p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <p>Spikive-Astro - Open Source Hardware Project</p>
+      <p>Astro - Open Source Hardware Project</p>
       <p>
         <a href="https://github.com/QGDuan/Spikive-Astro" target="_blank">GitHub Repository</a>
       </p>
